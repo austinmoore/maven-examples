@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>maven-examples</artifactId>
+        <groupId>de.austinmoore</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>..</relativePath>
+    </parent>
+    <groupId>de.austinmoore</groupId>
+    <artifactId>02ant</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>${artifactId}</name>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>a_unique_id</id>
+                        <phase>compile</phase>
+                        <configuration>
+                            <tasks>
+                                <!--
+                                  echo is a normal Ant task. You can add anything
+                                  you can add between <target> and </target> in a
+                                  build.xml.
+                                -->
+                                <echo>!!!!!!!!!!!!!!!!!!!!!!!!</echo>
+                                <echo>Look, Ma. I'm compiling!</echo>
+                                <echo>!!!!!!!!!!!!!!!!!!!!!!!!</echo>
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>another_unique_id</id>
+                        <phase>test</phase>
+                        <configuration>
+                            <tasks>
+                                <echo>!!!!!!!!!!!!!!!!!!!!</echo>
+                                <echo>Doin the test thing!</echo>
+                                <echo>!!!!!!!!!!!!!!!!!!!!</echo>
+                            </tasks>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
