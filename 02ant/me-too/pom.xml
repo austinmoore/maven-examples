@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>02ant</artifactId>
+        <groupId>de.austinmoore</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <groupId>de.austinmoore.02ant</groupId>
+    <artifactId>me-too</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <name>${artifactId}</name>
+
+    <!-- Q: Which ant tasks are executed for this project?  Take a guess. -->
+
+
+    <!-- A: All of the tasks defined in the parent in the plugins section. -->
+
+    <!-- What about the task defined in pluginManagement?  Comment out the task in the plugins section of the
+         parent and see what happens.  You'll see that no echoes are printed for this project at all.  The reason is,
+         because a plugin defined in pluginManagement is a default value that can be overwritten or in this case
+         extended when it is activated. The plugin is activated by declaring it in the plugins section of one of the
+         poms. -->
+
+    <!-- Uncomment this section to activate the ant plugin again for this project. -->
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-antrun-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
