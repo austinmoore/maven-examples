@@ -17,5 +17,6 @@
     <modules>
         <module>01errors</module>
         <module>02ant</module>
+        <module>03hierarchy</module>
     </modules>
 </project>
