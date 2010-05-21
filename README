@@ -1,3 +1,5 @@
-This is a collection of random maven example projects.  Each project is meant to explore a different facet of maven.  
+This is a collection of random maven example projects.  Each project is meant to explore a different facet of maven.
+
+No, I don't usually name my maven projects 01*.  I created these projects for a presentation, and that is the order in which I wanted to talk about the projects.   
 
 Feel free to fork this project and add your own projects.  Try to keep them as small as possible though and just explore one aspect of maven.
