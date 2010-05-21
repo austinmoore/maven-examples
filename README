@@ -1,5 +1,22 @@
 This is a collection of random maven example projects.  Each project is meant to explore a different facet of maven.
 
-No, I don't usually name my maven projects 01*.  I created these projects for a presentation, and that is the order in which I wanted to talk about the projects.   
-
 Feel free to fork this project and add your own projects.  Try to keep them as small as possible though and just explore one aspect of maven.
+
+No, I don't usually name my maven projects 01*.  I created these projects for a presentation, and that is the order in which I wanted to talk about the projects.
+
+== 01 Errors
+
+How to read error messages from maven using a very common maven error as an example.
+
+== 02 Ant
+
+How to run Ant tasks from your build. Useful when converting a large Ant build to maven piece by piece.
+
+== 03 Hierarchy
+
+What is the difference between a child and a module?
+
+== 04 Dependencies
+
+Tips on how to organize your dependencies in a multi-module project.
+
