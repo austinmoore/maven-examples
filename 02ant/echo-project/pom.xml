@@ -23,9 +23,9 @@
                         <phase>compile</phase>
                         <configuration>
                             <tasks>
-                                <echo>!!!!!!!!!!!!!!!!!!!!!!!!</echo>
-                                <echo>Look, Ma. I'm compiling!</echo>
-                                <echo>!!!!!!!!!!!!!!!!!!!!!!!!</echo>
+                                <echo>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</echo>
+                                <echo>Look, Ma. I'm compiling ${artifactId}!</echo>
+                                <echo>!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</echo>
                             </tasks>
                         </configuration>
                         <goals>
@@ -33,8 +33,9 @@
                         </goals>
                     </execution>
 
+                    <!-- with multiple executions you need a unique id for each -->
                     <execution>
-                        <id>another_unique_id</id>  <!-- with multiple executions you need a unique id for each -->
+                        <id>another_unique_id</id>
                         <phase>test</phase>
                         <configuration>
                             <tasks>
